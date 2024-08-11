@@ -1,0 +1,43 @@
+default_install_hook_types:
+- pre-commit
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: check-yaml
+  - id: sort-simple-yaml
+  - id: check-added-large-files
+
+- repo: https://github.com/psf/black
+  rev: 24.8.0
+  hooks:
+  - id: black
+    language_version: python3.12
+    args:
+    - --config=pyproject.toml
+
+- repo: https://github.com/PyCQA/isort
+  rev: 5.13.2
+  hooks:
+  - id: isort
+    args:
+      - --config=pyproject.toml
+
+- repo: https://github.com/PyCQA/flake8
+  rev: 7.1.1
+  hooks:
+  - id: flake8
+    language_version: python3.12
+    args:
+      - --config=pyproject.toml
+
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: v1.11.1
+  hooks:
+  - id: mypy
+    args:
+    - --config=pyproject.toml

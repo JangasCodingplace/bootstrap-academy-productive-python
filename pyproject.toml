@@ -6,6 +6,19 @@ authors = ["JangasCodingplace <janisgoesser92@gmail.com>"]
 readme = "README.md"
 packages = [{include = "app"}]
 
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[flake8]
+max-line-length = 100
+
+[tool.isort]
+profile = "black"
+
+
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.112.0"
