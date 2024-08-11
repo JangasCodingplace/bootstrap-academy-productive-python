@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           poetry install --no-interaction
-          cp /app/.env.example /app/.env
+          cp app/.env.example app/.env
 
       - name: Test with pytest
         run: |
