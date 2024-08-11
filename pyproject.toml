@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-hello-world-app"
+version = "0.1.0"
+description = "It's a Hello world app for FastAPI"
+authors = ["JangasCodingplace <janisgoesser92@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.0"
+uvicorn = {extras = ["standard"], version = "^0.30.5"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+pre-commit = "^3.8.0"
+flake8 = "^7.1.1"
+pytest = "^8.3.2"
+mypy = "^1.11.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
