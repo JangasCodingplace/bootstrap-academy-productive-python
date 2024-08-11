@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-hello-world-app"
-version = "0.1.0"
+version = "0.2.0"
 description = "It's a Hello world app for FastAPI"
 authors = ["JangasCodingplace <janisgoesser92@gmail.com>"]
 readme = "README.md"

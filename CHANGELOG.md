@@ -1,6 +1,24 @@
 # CHANGELOG
 
+## v0.2.0 (2024-08-11)
+
+### Feature
+
+* feat: add build and deploy to workflow ([`01bb5af`](https://github.com/JangasCodingplace/bootstrap-academy-productive-python/commit/01bb5afebf253d0a51ef68b0aa5f98ad56794b3d))
+
+* feat: initial docker setup ([`aa8af6d`](https://github.com/JangasCodingplace/bootstrap-academy-productive-python/commit/aa8af6da3195653a5af45966c68f78440055f163))
+
+### Unknown
+
+* Merge pull request #1 from JangasCodingplace/feat/add-docker-setup
+
+feat: add docker setup ([`7ec04e5`](https://github.com/JangasCodingplace/bootstrap-academy-productive-python/commit/7ec04e5020c782afd7f3d8bbc251fbce621555ab))
+
 ## v0.1.0 (2024-08-11)
+
+### Chore
+
+* chore(release): 0.1.0 [skip ci] ([`e52aff2`](https://github.com/JangasCodingplace/bootstrap-academy-productive-python/commit/e52aff2cc0c2ef44fad09422b642c6778244b087))
 
 ### Feature
 
