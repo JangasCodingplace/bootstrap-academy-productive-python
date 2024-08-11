@@ -1,0 +1,22 @@
+name: Deployment Workflow
+
+
+on:
+  workflow_run:
+    workflows:
+      - "Release Workflow"
+
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
