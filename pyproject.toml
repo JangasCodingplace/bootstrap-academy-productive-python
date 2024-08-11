@@ -18,11 +18,11 @@ max-line-length = 100
 [tool.isort]
 profile = "black"
 
-
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.112.0"
 uvicorn = {extras = ["standard"], version = "^0.30.5"}
+pydantic-settings = "^2.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.8.0"
@@ -31,6 +31,7 @@ flake8 = "^7.1.1"
 pytest = "^8.3.2"
 mypy = "^1.11.1"
 isort = "^5.13.2"
+python-dotenv = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]

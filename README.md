@@ -42,10 +42,20 @@ To get started, you will need to have Python 3.12 installed. Then, follow these 
 ## Usage
 
 ### Running the Application
+Create a `.env` file
+```sh
+cp app/.env.example app/.env
+```
+
+Navigate into `/app` directory
+```sh
+cd app/
+```
+
 To run the application, simply execute:
 
 ```sh
-poetry run uvicorn app.main:app --reload
+poetry run uvicorn main:app --reload
 ```
 By default, the application will be available at http://127.0.0.1:8000.
 
