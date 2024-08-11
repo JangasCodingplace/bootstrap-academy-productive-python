@@ -21,6 +21,15 @@ profile = "black"
 [tool.pytest.ini_options]
 pythonpath = "app/"
 
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+branch = "main"
+upload_to_pypi = false
+upload_to_release = false
+commit_message = "chore(release): {version} [skip ci]"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = "^0.112.0"
