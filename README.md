@@ -33,7 +33,7 @@ To get started, you will need to have Python 3.12 installed. Then, follow these 
     ```sh
     pip install poetry
     ```
-   
+
 3. Use Poetry to install the dependencies:
     ```sh
    poetry install
@@ -67,7 +67,8 @@ If you want to contribute to the project or set up a development environment, fo
 This project uses pre-commit hooks to ensure code quality. To set up the hooks, run:
 
 ```sh
-poetry run pre-commit install
+poetry run pre-commit install \
+  && poetry run pre-commit install --hook-type commit-msg
 ```
 
 ### Code Formatting and Linting
