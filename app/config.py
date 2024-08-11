@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     """Application settings."""
 
     app_name: str
+    version_override: str | None = None
 
     model_config = SettingsConfigDict(
         frozen=True,
@@ -22,7 +23,7 @@ class Settings(BaseSettings):
 
     @property
     def version(self):
-        return importlib.metadata.version(self.app_name)
+        return self.version_override or importlib.metadata.version(self.app_name)
 
 
 settings = Settings()  # type: ignore[call-arg]
