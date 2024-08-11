@@ -80,8 +80,8 @@ poetry run pre-commit install \
 Run these tools by executing:
 
     ```sh
-    poetry run black .
-    poetry run flake8 .
-    poetry run mypy .
-    poetry run isort
+    poetry run black app/
+    poetry run flake8 app/
+    poetry run mypy app/
+    poetry run isort app/
     ```.
