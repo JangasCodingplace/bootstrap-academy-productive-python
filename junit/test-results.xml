@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.614" timestamp="2024-08-11T15:44:53.944068+02:00" hostname="Janiss-MacBook-Pro-3.local"><testcase classname="tests.test_config" name="test_version" time="0.001" /></testsuite></testsuites>

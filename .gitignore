@@ -34,3 +34,9 @@ VENV/*
 # IDE
 .idea/*
 .vscode/*
+
+
+# Coverage
+.coverage
+pytest.xml
+pytest-coverage.txt
