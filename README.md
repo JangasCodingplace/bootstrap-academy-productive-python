@@ -55,7 +55,7 @@ cd app/
 To run the application, simply execute:
 
 ```sh
-poetry run uvicorn main:app --reload
+poetry run fastapi run main:app --reload
 ```
 By default, the application will be available at http://127.0.0.1:8000.
 
@@ -83,7 +83,7 @@ poetry run pre-commit install \
 
 ### Code Formatting and Linting
 - Black: Code formatting
-- Flake8: Linting
+- Ruff: Linting
 - Mypy: Type checking
 - Isort: Import sorting
 
@@ -91,7 +91,7 @@ Run these tools by executing:
 
     ```sh
     poetry run black app/
-    poetry run flake8 app/
+    poetry run ruff app/
     poetry run mypy app/
     poetry run isort app/
     ```.
